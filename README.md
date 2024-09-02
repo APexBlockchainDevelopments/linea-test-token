@@ -4,8 +4,8 @@
 The Linea Test Token dApp is a decentralized application built on the Linea Sepolia network. It allows users to interact with the `Linea Test Token` smart contract by minting tokens, withdrawing funds, and updating the admin address. The dApp is built with React and integrates with MetaMask for seamless interaction with the blockchain.
 
 ## **Features**
-- **Mint Tokens**: Users can send ETH in WEI to the contract, which will mint an equivalent amount of Linea Test Token (LTT) at a 1:1 ratio.
-- **Withdraw Funds**: The contract owner can withdraw all ETH collected by the contract.
+- **Mint Tokens**: Users can send LineaETH to the contract, which will mint an equivalent amount of Linea Test Token (LTT) at a 1:1 ratio.
+- **Withdraw Funds**: The contract owner can withdraw all LineaETH collected by the contract.
 - **Update Admin Address**: The contract owner can update the admin address of the contract.
 - **Total Supply Display**: The total supply of Linea Test Token (LTT) is displayed on the dApp, updating in real-time as tokens are minted.
 - **Add Token to MetaMask**: Users can add the Linea Test Token (LTT) to their MetaMask wallet with a single click.
@@ -49,8 +49,8 @@ The Linea Test Token dApp is a decentralized application built on the Linea Sepo
     
 ## **Usage**
 1. Connect to MetaMask: Ensure MetaMask is connected to the Linea Sepolia network.
-2. Mint Tokens: Enter the amount of ETH in WEI and click "Mint Tokens" to mint Linea Test Token (LTT).
-3. Withdraw Funds: Click "Withdraw All Ether" to withdraw all ETH from the contract (only available to the contract owner).
+2. Mint Tokens: Enter the amount of LineaETH and click "Mint Tokens" to mint Linea Test Token (LTT).
+3. Withdraw Funds: Click "Withdraw All Ether" to withdraw all LineaETH from the contract (only available to the contract owner).
 4. Update Admin Address: Enter the new admin address and click "Update Admin" (only available to the contract owner).
 5. View Total Supply: The total supply of Linea Test Token (LTT) is displayed on the homepage.
 6. Add Token to MetaMask: Click "Add LTT to MetaMask" to add the Linea Test Token (LTT) to your MetaMask wallet.
