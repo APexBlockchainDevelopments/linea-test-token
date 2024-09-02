@@ -1,0 +1,6 @@
+[submodule "front-end-dapp"]
+	path = front-end-dapp
+	url = ./front-end-dapp
+[submodule "smart-contracts"]
+	path = smart-contracts
+	url = ./smart-contracts
