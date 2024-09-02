@@ -7,7 +7,7 @@ const ContractIntegration = () => {
     const [totalSupply, setTotalSupply] = useState("0");
     const [isCorrectNetwork, setIsCorrectNetwork] = useState(false);
 
-    const contractAddress = "0x489DB986bf343e7A04BBdb2B82311FF51AD49DDE";
+    const contractAddress = "YOUR_CONTRACT_ADDRESS"; 
     const lineaSepoliaNetworkId = "59141"; 
     const abi = [
         "function mintTokensForUser() public payable",
@@ -17,7 +17,7 @@ const ContractIntegration = () => {
         "function totalSupply() public view returns (uint256)"
     ];
 
-    const checkNetwork = async () => {~
+    const checkNetwork = async () => {
         if (!window.ethereum) {
             alert("MetaMask is required");
             return;
