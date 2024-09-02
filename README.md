@@ -8,7 +8,6 @@ The Linea Test Token dApp is a decentralized application built on the Linea Sepo
 - **Withdraw Funds**: The contract owner can withdraw all ETH collected by the contract.
 - **Update Admin Address**: The contract owner can update the admin address of the contract.
 - **Total Supply Display**: The total supply of Linea Test Token (LTT) is displayed on the dApp, updating in real-time as tokens are minted.
-- **Network Switching**: Users can easily switch to the Linea Sepolia network directly from the dApp.
 - **Add Token to MetaMask**: Users can add the Linea Test Token (LTT) to their MetaMask wallet with a single click.
 
 
@@ -21,23 +20,28 @@ The Linea Test Token dApp is a decentralized application built on the Linea Sepo
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/Linea Test Token-dapp.git  ***** Will need to update this
+   git clone [https://github.com/yourusername/Linea Test Token-dapp.git](https://github.com/APexBlockchainDevelopments/linea-test-token) 
    cd Linea Test Token-dapp
    ```
 2. **Install Front End Dependencies**: 
     ```bash
-    mkdir FrontEnd
+    cd front-end-dapp
     npm install
     ```
 3. **Install Smart Contract Dependencies**: 
     ```bash
-    mkdir SmartContracts
+    cd smart-contracts
     forge install
     ```
-4. **Update Contract Address**:
+4. **Deploy the Smart Contract**: 
+    ```bash
+    forge create --rpc-url https://linea-sepolia.blockpi.network/v1/rpc/public --private-key your_private_key LineaTestToken.sol:LineaTestToken --constructor-args admin_address
+    ```
+    - Make sure to replace your_private_key and admin_address with the appropriate values. After deployment, note the contract address for use in the frontend.
+5. **Update Contract Address**:
     - Open Transfer.js and update the contractAddress variable with your deployed contract’s address.
 
-5. **Run the dApp**:
+6. **Run the dApp**:
     ```bash
     npm start
     ```
